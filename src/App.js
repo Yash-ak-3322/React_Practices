@@ -1,6 +1,7 @@
 import "./App.css";
 import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
+import Form from "./components/Form";
 import FunctionClick from "./components/FunctionClick";
 import Greet from "./components/Greet";
 import Message from "./components/Message";
@@ -34,6 +35,10 @@ function App() {
 
           <div className="flex justify-center items-center p-3 bg-purple-400 rounded-full font-bold">
             <ParentCompo />
+          </div>
+
+          <div className="flex justify-center mx-5 items-center p-3 my-5 bg-green-400 rounded-md font-bold">
+            <Form />
           </div>
         </div>
       </main>
