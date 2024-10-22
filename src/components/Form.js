@@ -6,8 +6,11 @@ class Form extends Component {
 
     this.state = {
       username: "",
+<<<<<<< HEAD
       desc: "",
       skill: "React JS",
+=======
+>>>>>>> 21c67554f417f76d3ac15df0ed7a9c55d9e4f1d1
     };
   }
 
@@ -17,6 +20,7 @@ class Form extends Component {
     });
   };
 
+<<<<<<< HEAD
   handleOccupationChange = (event) => {
     this.setState({
       desc: event.target.value,
@@ -35,12 +39,18 @@ class Form extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
+=======
+  render() {
+    return (
+      <div>
+>>>>>>> 21c67554f417f76d3ac15df0ed7a9c55d9e4f1d1
         <h1>Username: </h1>
         <input
           type="text"
           value={this.state.username}
           onChange={this.handleUsernameChange}
         ></input>
+<<<<<<< HEAD
         <h1>Occupation: </h1>
         <textarea
           value={this.state.desc}
@@ -65,6 +75,12 @@ class Form extends Component {
           {this.state.desc} |<br /> Skills :-) {this.state.skill} |
         </p>
       </form>
+=======
+        <p className="font-serif text-gray-400 flex justify-end items-end p-2 mx-2">
+          Username :-) {this.state.username}
+        </p>
+      </div>
+>>>>>>> 21c67554f417f76d3ac15df0ed7a9c55d9e4f1d1
     );
   }
 }
