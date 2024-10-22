@@ -1,9 +1,13 @@
 import React from "react";
 
-function Greet() {
+function Greet(props) {
+  const { name } = props;
   return (
     <div>
-      <h1 className="text-2xl font-mono text-orange-600"> Welcome Home :-)</h1>
+      <h1 className="text-2xl font-mono text-orange-600">
+        {" "}
+        Welcome {name} :-)
+      </h1>
     </div>
   );
 }

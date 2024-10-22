@@ -9,25 +9,42 @@ class Message extends Component {
     };
   }
 
+  // We can us State in Class Compo. with calling the class constructor.
+  // After we need to set the state using This.State = {}
+  // For trigger the click event, we can pass the Function call using ES6.
+  // Inside the setState method, we pass one object as state and callback function.
+
   onClickEvent() {
     this.setState({
       Message: "Thank u for Visiting ",
     });
+    console.log(this.state.Message);
   }
 
   incrementState() {
-    this.setState({
-      Counter: this.state.Counter + 1,
-    });
+    this.setState(
+      {
+        Counter: this.state.Counter + 1,
+      },
+      () => {
+        console.log(this.state.Counter);
+      }
+    );
   }
 
   decrementState() {
-    this.setState((prevState, props) => ({
-      Counter: prevState.Counter - 1,
-    }));
+    this.setState(
+      (prevState, props) => ({
+        Counter: prevState.Counter - 1,
+      }),
+      () => {
+        console.log(this.state.Counter);
+      }
+    );
   }
 
   render() {
+    // const { state1, state2 } = this.state;
     return (
       <div>
         <h1 className="font-mono ">{this.state.Message}</h1>
