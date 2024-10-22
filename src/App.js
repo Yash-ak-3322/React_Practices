@@ -4,6 +4,7 @@ import EventBind from "./components/EventBind";
 import FunctionClick from "./components/FunctionClick";
 import Greet from "./components/Greet";
 import Message from "./components/Message";
+import ParentCompo from "./components/ParentCompo";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
           <div className="my-5 bg-orange-200 rounded-xl p-5 font-serif">
             Functions Events Binding <FunctionClick />
             Class Events Binding <EventBind />
+          </div>
+
+          <div className="flex justify-center items-center p-3 bg-purple-400 rounded-full font-bold">
+            <ParentCompo />
           </div>
         </div>
       </main>
