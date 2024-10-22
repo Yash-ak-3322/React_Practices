@@ -12,8 +12,8 @@ class ParentCompo extends Component {
     this.buttonClick = this.buttonClick.bind(this);
   }
 
-  buttonClick() {
-    alert(`Message From ${this.state.message} Component`);
+  buttonClick(childname) {
+    alert(`Message From ${this.state.message} Component from ${childname}`);
   }
 
   render() {
