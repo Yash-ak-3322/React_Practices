@@ -5,6 +5,7 @@ function ChildCompo({ greetParent }) {
     <>
       <div className="flex justify-center items-center font-mono ">
         <button onClick={() => greetParent("Child")}>Click :)</button>
+        {/* Pass the Value by calling the props from parent  */}
       </div>
     </>
   );

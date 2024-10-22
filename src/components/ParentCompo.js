@@ -13,6 +13,7 @@ class ParentCompo extends Component {
   }
 
   buttonClick(childname) {
+    // Get the Para from Child Compo.
     alert(`Message From ${this.state.message} Component from ${childname}`);
   }
 
@@ -20,7 +21,8 @@ class ParentCompo extends Component {
     return (
       <div>
         <header>Child Component</header>
-        <ChildCompo greetParent={this.buttonClick} />
+        <ChildCompo greetParent={this.buttonClick} />{" "}
+        {/* Just pass the instance of method as props */}
       </div>
     );
   }
