@@ -8,6 +8,7 @@ import HookCounter from "./components/HookCounter";
 import Message from "./components/Message";
 import ParentCompo from "./components/ParentCompo";
 import PostList from "./components/PostList";
+import UseEffectHook from "./components/UseEffectHook";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
 
           <div className="p-3 my-3 mx-3 bg-violet-200 font-serif text-xl">
             <HookCounter />
+          </div>
+
+          <div className="p-3 bg-fuchsia-600 text-cyan-400">
+            <UseEffectHook />
           </div>
         </div>
       </main>
