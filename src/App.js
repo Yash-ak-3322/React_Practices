@@ -4,8 +4,10 @@ import EventBind from "./components/EventBind";
 import Form from "./components/Form";
 import FunctionClick from "./components/FunctionClick";
 import Greet from "./components/Greet";
+import HookCounter from "./components/HookCounter";
 import Message from "./components/Message";
 import ParentCompo from "./components/ParentCompo";
+import PostList from "./components/PostList";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -39,6 +41,14 @@ function App() {
 
           <div className="flex justify-center mx-5 items-center p-3 my-5 bg-green-400 rounded-md font-bold">
             <Form />
+          </div>
+
+          <div className="p-3 my-3 mx-3 bg-yellow-200 text-blue-800 font-serif text-xl">
+            <PostList />
+          </div>
+
+          <div className="p-3 my-3 mx-3 bg-violet-200 font-serif text-xl">
+            <HookCounter />
           </div>
         </div>
       </main>

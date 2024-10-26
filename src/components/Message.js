@@ -9,8 +9,8 @@ class Message extends Component {
     };
   }
 
-  // We can us State in Class Compo. with calling the class constructor.
-  // After we need to set the state using This.State = {}
+  // We can us State in Class Compo. by calling the class constructor.
+  // After we need to initialize the state using This.State = {}
   // For trigger the click event, we can pass the Function call using ES6.
   // Inside the setState method, we pass one object as state and callback function.
 
