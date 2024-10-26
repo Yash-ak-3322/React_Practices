@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 
 function UseEffectHook() {
   const [count, setCount] = useState(0);
+  //   const [x, setX] = useState(0);
+  //   const [y, setY] = useState(0);
 
   useEffect(() => {
     document.title = `You Clicked ${count} times`;
@@ -9,7 +11,18 @@ function UseEffectHook() {
 
   // useEffect runs after every render
   // For Conditionally render the useEffect Hook, we need to pass in parameter as an array.
-  // E.g. :- [count]
+  // E.g. :- [count] or when we want to pass any state or props to render the useEffect hook.
+
+  //   const logMouseEvent = (e) => {
+  //     console.log("Mounse Event ");
+  //     setX(e.clientX);
+  //     setY(e.clientY);
+  //   };
+
+  //   useEffect(() => {
+  //     console.log("Mouse useEffect called :-) ");
+  //     window.addEventListener("mousemove", logMouseEvent);
+  //   }, []);
 
   return (
     <>
