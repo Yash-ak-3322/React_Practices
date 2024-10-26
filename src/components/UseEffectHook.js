@@ -9,7 +9,7 @@ function UseEffectHook() {
 
   // useEffect runs after every render
   // For Conditionally render the useEffect Hook, we need to pass in parameter as an array.
-  // E.g. :- [count]
+  // E.g. :- [count] or when we want to pass any state or props to render the useEffect hook.
 
   return (
     <>
