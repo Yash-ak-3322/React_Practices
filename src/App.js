@@ -9,6 +9,7 @@ import Message from "./components/Message";
 import ParentCompo from "./components/ParentCompo";
 import PostList from "./components/PostList";
 import UseEffectHook from "./components/UseEffectHook";
+import UseReduer from "./components/UseReduer";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -54,6 +55,10 @@ function App() {
 
           <div className="p-3 bg-fuchsia-600 text-cyan-400">
             <UseEffectHook />
+          </div>
+
+          <div className="p-3 bg-emerald-300 text-amber-800">
+            <UseReduer />
           </div>
         </div>
       </main>
